@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE51E9821717C68000D4AF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51E9811717C68000D4AF40 /* Foundation.framework */; };
+		CE51E9871717C68000D4AF40 /* MobileUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE51E9861717C68000D4AF40 /* MobileUtil.h */; };
+		CE51E9891717C68000D4AF40 /* MobileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE51E9881717C68000D4AF40 /* MobileUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE51E97C1717C68000D4AF40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CE51E9871717C68000D4AF40 /* MobileUtil.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE51E97E1717C68000D4AF40 /* libMobileUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51E9811717C68000D4AF40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE51E9851717C68000D4AF40 /* MobileUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileUtil-Prefix.pch"; sourceTree = "<group>"; };
+		CE51E9861717C68000D4AF40 /* MobileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileUtil.h; sourceTree = "<group>"; };
+		CE51E9881717C68000D4AF40 /* MobileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileUtil.m; sourceTree = "<group>"; };
+		CE51E98F1717DD8A00D4AF40 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = /Users/shaorui/Development/AIR/include/FlashRuntimeExtensions.h; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE51E97B1717C68000D4AF40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51E9821717C68000D4AF40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE51E9751717C68000D4AF40 = {
+			isa = PBXGroup;
+			children = (
+				CE51E98F1717DD8A00D4AF40 /* FlashRuntimeExtensions.h */,
+				CE51E9831717C68000D4AF40 /* MobileUtil */,
+				CE51E9801717C68000D4AF40 /* Frameworks */,
+				CE51E97F1717C68000D4AF40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE51E97F1717C68000D4AF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE51E97E1717C68000D4AF40 /* libMobileUtil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE51E9801717C68000D4AF40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE51E9811717C68000D4AF40 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE51E9831717C68000D4AF40 /* MobileUtil */ = {
+			isa = PBXGroup;
+			children = (
+				CE51E9861717C68000D4AF40 /* MobileUtil.h */,
+				CE51E9881717C68000D4AF40 /* MobileUtil.m */,
+				CE51E9841717C68000D4AF40 /* Supporting Files */,
+			);
+			path = MobileUtil;
+			sourceTree = "<group>";
+		};
+		CE51E9841717C68000D4AF40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE51E9851717C68000D4AF40 /* MobileUtil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE51E97D1717C68000D4AF40 /* MobileUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE51E98C1717C68000D4AF40 /* Build configuration list for PBXNativeTarget "MobileUtil" */;
+			buildPhases = (
+				CE51E97A1717C68000D4AF40 /* Sources */,
+				CE51E97B1717C68000D4AF40 /* Frameworks */,
+				CE51E97C1717C68000D4AF40 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileUtil;
+			productName = MobileUtil;
+			productReference = CE51E97E1717C68000D4AF40 /* libMobileUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE51E9761717C68000D4AF40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = shaorui;
+			};
+			buildConfigurationList = CE51E9791717C68000D4AF40 /* Build configuration list for PBXProject "MobileUtil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE51E9751717C68000D4AF40;
+			productRefGroup = CE51E97F1717C68000D4AF40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE51E97D1717C68000D4AF40 /* MobileUtil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE51E97A1717C68000D4AF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51E9891717C68000D4AF40 /* MobileUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE51E98A1717C68000D4AF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Volumes/OSX_DATA/Projects/TechmxExtensions/objc/bin;
+			};
+			name = Debug;
+		};
+		CE51E98B1717C68000D4AF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Volumes/OSX_DATA/Projects/TechmxExtensions/objc/bin;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE51E98D1717C68000D4AF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MobileUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileUtil/MobileUtil-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		CE51E98E1717C68000D4AF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MobileUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileUtil/MobileUtil-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE51E9791717C68000D4AF40 /* Build configuration list for PBXProject "MobileUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE51E98A1717C68000D4AF40 /* Debug */,
+				CE51E98B1717C68000D4AF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE51E98C1717C68000D4AF40 /* Build configuration list for PBXNativeTarget "MobileUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE51E98D1717C68000D4AF40 /* Debug */,
+				CE51E98E1717C68000D4AF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE51E9761717C68000D4AF40 /* Project object */;
+}

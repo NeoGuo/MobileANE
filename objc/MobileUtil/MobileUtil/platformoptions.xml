@@ -1,0 +1,9 @@
+<platform xmlns="http://ns.adobe.com/air/extension/3.5"> 
+    <description > An optional description</description> 
+    <copyright>2012 (optional)</copyright> 
+    <linkerOptions>
+        <option>-framework MessageUI</option>
+        <option>-framework UIKit</option>
+    </linkerOptions> 
+</platform>
+

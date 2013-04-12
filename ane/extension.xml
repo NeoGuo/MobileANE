@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://ns.adobe.com/air/extension/3.6">
+
+	<id>com.techmx.ext.MobileUtil</id>
+	<versionNumber>1</versionNumber>
+
+	<platforms>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libMobileUtil.a</nativeLibrary>
+				<initializer>techmxExtInitializer</initializer>
+				<finalizer>techmxExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>TechmxExtension.jar</nativeLibrary>
+				<initializer>com.techmx.fre.MobileUtilExtension</initializer>
+				<finalizer>com.techmx.fre.MobileUtilExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default"> 
+            <applicationDeployment/>
+        </platform>
+	</platforms>
+
+</extension>

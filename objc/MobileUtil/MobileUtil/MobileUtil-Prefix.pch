@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MobileUtil' target in the 'MobileUtil' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

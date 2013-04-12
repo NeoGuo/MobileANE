@@ -125,8 +125,8 @@ FREObject creatFREBool(BOOL value)
 ANE_FUNCTION(sendSMS)
 {
     
-    NSString * num = getStringFromFREObject(argv[1]);
-    NSString * msg = getStringFromFREObject(argv[0]);
+    NSString * num = getStringFromFREObject(argv[0]);
+    NSString * msg = getStringFromFREObject(argv[1]);
     MobileUtil *message = [[MobileUtil alloc] init];
     [message sendSMS: num mes:msg];
     return creatFREBool(YES);

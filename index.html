@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Mobileane : 支持(Android,iOS和桌面调试)的ANE库" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mobileane</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/NeoGuo/MobileANE">View on GitHub</a>
+
+          <h1 id="project_title">Mobileane</h1>
+          <h2 id="project_tagline">支持(Android,iOS和桌面调试)的ANE库</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/NeoGuo/MobileANE/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/NeoGuo/MobileANE/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>MobileANE</h1>
+
+<p>MobileANE是一个针对Adobe AIR移动设备功能扩展的项目，方便用户在AIR核心功能之外使用原生语言才能提供的功能。</p>
+
+<p>目前已经实现的功能有：</p>
+
+<ol>
+<li>sendSMS 发短信功能(支持iOS,Android)</li>
+</ol><h2>1.如何使用</h2>
+
+<p>本目录已经包含了打包最终生成的ANE文件，即ane/MobileUtil.ane。如果您只是使用，不需要进行功能修改，可以
+忽略下面的编译说明，将MobileUtil.ane拷贝到您的项目，进行引用即可。</p>
+
+<p>在Flash Builder中添加的ANE，默认是不选中的（在ActionScript构建打包设置中），需要手动选择每一个平台，把勾打上，否则运行时会找不到类。</p>
+
+<p>引用ANE后，Flash Builder会自动更新项目的XML描述文件，在extensions节点加入ANE的标识。如下：</p>
+
+<pre><code>    &lt;extensions&gt;
+    &lt;extensionID&gt;com.techmx.ext.MobileUtil&lt;/extensionID&gt;
+    &lt;/extensions&gt;
+</code></pre>
+
+<p>如果没有自动生成，则需要您手工添加。然后在您的AS代码里，即可使用ANE：</p>
+
+<pre><code>    import com.techmx.ext.MobileUtil;
+    var mobileUtil:MobileUtil = new MobileUtil();
+    mobileUtil.sendSMS("1000000","今天你吃饭了吗?");
+</code></pre>
+
+<h2>2.如何编译</h2>
+
+<p>首先，无论您是Windows还是Mac系统，都要首先配置环境变量(PATH)，确保可以调用ADT命令。</p>
+
+<p>配置方式参见Adobe的文档：
+<a href="http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-71994050128cca87097-8000.html">http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-71994050128cca87097-8000.html</a></p>
+
+<p>Windows下的ADT命令应该是这样的(可以新建一个文本文件，将以下命令粘入，保存为build.bat，执行)：</p>
+
+<pre><code>adt -package -storetype PKCS12 -keystore appplatform.p12 -storepass 123456 -target ane MobileUtil.ane extension.xml -swc *.swc -platform Android-ARM -C .\Android-ARM\ . -platform default -C .\Default\ . 
+</code></pre>
+
+<p>Mac OSX下：</p>
+
+<p>请执行ane/build.sh文件，具体方式，打开终端，输入：</p>
+
+<pre><code>sudo sh {您的文件路径}/build.sh
+</code></pre>
+
+<p>稍等片刻，即可生成ANE文件</p>
+
+<h2>3.交流反馈</h2>
+
+<p>QQ群：231842868</p>
+
+<h2>4.参考资料</h2>
+
+<p><a href="http://www.adobe.com/devnet/air.html">http://www.adobe.com/devnet/air.html</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mobileane maintained by <a href="https://github.com/NeoGuo">NeoGuo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

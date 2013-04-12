@@ -11,3 +11,5 @@ bin-release/
 # information for Eclipse / Flash Builder.
 
 .DS_Store
+Debug-iphoneos/
+MobileUtil.build/

@@ -12,7 +12,7 @@
 #import "FlashRuntimeExtensions.h"
 #import "GADBannerView.h"
 
-@interface MobileUtil : UIViewController<MFMessageComposeViewControllerDelegate,GADBannerViewDelegate>
+@interface MobileUtil : UIViewController<MFMessageComposeViewControllerDelegate>
 
 @end
 NSString * getStringFromFREObject(FREObject obj);
@@ -56,7 +56,6 @@ void TMXContextFinalizer(FREContext ctx);
 ANE_FUNCTION(sendSMS);
 ANE_FUNCTION(shake);
 ANE_FUNCTION(admobInit);
-ANE_FUNCTION(admobSetOrientation);
 ANE_FUNCTION(admobShowBanner);
 ANE_FUNCTION(admobHideBanner);
 ANE_FUNCTION(admobShowInterstitial);

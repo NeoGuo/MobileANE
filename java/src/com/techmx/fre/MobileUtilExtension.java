@@ -3,7 +3,7 @@ package com.techmx.fre;
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREExtension;
 
-/**Java扩展实现*/
+/**Extension*/
 public class MobileUtilExtension implements FREExtension {
 
 	@Override

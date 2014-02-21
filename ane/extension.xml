@@ -22,6 +22,20 @@
 		<platform name="default"> 
             <applicationDeployment/>
         </platform>
+        <platform name="Windows-x86"> 
+            <applicationDeployment>
+				<nativeLibrary>libSerialANE.dll</nativeLibrary>
+				<initializer>SerialANEinitializer</initializer>
+				<finalizer>SerialANEfinalizer</finalizer>
+			</applicationDeployment>
+        </platform>
+        <platform name="MacOS-x86"> 
+            <applicationDeployment>
+				<nativeLibrary>SerialANE.framework</nativeLibrary>
+				<initializer>SerialANEinitializer</initializer>
+				<finalizer>SerialANEfinalizer</finalizer>
+			</applicationDeployment>
+        </platform>
 	</platforms>
 
 </extension>

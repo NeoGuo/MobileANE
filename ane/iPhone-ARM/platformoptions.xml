@@ -4,6 +4,14 @@
     <linkerOptions>
         <option>-framework MessageUI</option>
         <option>-framework UIKit</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework StoreKit</option>
+        <option>-framework CoreGraphics</option>
+        <option>-framework AVFoundation</option>
+        <option>-framework AudioToolBox</option>
+        <option>-framework AdSupport</option>
+        <option>-framework Foundation</option>
+        <option>-w</option>
     </linkerOptions> 
 </platform>
 

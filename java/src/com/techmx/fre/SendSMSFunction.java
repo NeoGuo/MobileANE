@@ -7,7 +7,7 @@ import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
 
-/**发短信的方法实现*/
+/**Function*/
 public class SendSMSFunction implements FREFunction {
 
 	@Override

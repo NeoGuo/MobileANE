@@ -2,26 +2,48 @@
 <swc xmlns="http://www.adobe.com/flash/swccatalog/9">
     <versions>
         <swc version="1.2"/>
-        <flex version="4.7.0" build="353448" minimumSupportedVersion="3.0.0"/>
-        <compiler name="ActionScript Compiler" version="2.0.0" build="353448"/>
+        <flex version="4.7.0" build="354071" minimumSupportedVersion="3.0.0"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354071"/>
     </versions>
     <features>
         <feature-script-deps/>
     </features>
     <libraries>
         <library path="library.swf">
-            <script name="com/techmx/ext/MobileUtil" mod="1365689751000">
+            <script name="com/techmx/ext/AdmobUtil" mod="1389532056000">
+                <def id="com.techmx.ext:AdmobUtil"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="Error" type="e"/>
+                <dep id="Function" type="s"/>
+                <dep id="String" type="s"/>
+                <dep id="com.techmx.ext.event:AdmobEvent" type="e"/>
+                <dep id="flash.display:StageOrientation" type="e"/>
+                <dep id="flash.events:EventDispatcher" type="i"/>
+                <dep id="flash.events:StatusEvent" type="s"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="flash.geom:Rectangle" type="s"/>
+                <dep id="int" type="e"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <script name="com/techmx/ext/MobileUtil" mod="1389514298000">
                 <def id="com.techmx.ext:MobileUtil"/>
                 <dep id="Error" type="e"/>
                 <dep id="Function" type="s"/>
                 <dep id="String" type="s"/>
+                <dep id="com.techmx.ext:AdmobUtil" type="s"/>
                 <dep id="flash.events:EventDispatcher" type="i"/>
                 <dep id="flash.events:StatusEvent" type="s"/>
                 <dep id="flash.external:ExtensionContext" type="s"/>
                 <dep id="trace" type="e"/>
             </script>
+            <script name="com/techmx/ext/event/AdmobEvent" mod="1388926478000">
+                <def id="com.techmx.ext.event:AdmobEvent"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="String" type="s"/>
+                <dep id="flash.events:Event" type="i"/>
+            </script>
             <digests>
-                <digest type="SHA-256" signed="false" value="796d98ad8b96e031c5d24e6dd7c591a0737ac8ae387324f97326b553e8b25fe6"/>
+                <digest type="SHA-256" signed="false" value="e6623c36369a797887fab91e85f5abdad045e4b54c4b01d543f48e2c60a3ec65"/>
             </digests>
         </library>
     </libraries>

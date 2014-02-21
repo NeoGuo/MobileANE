@@ -2,6 +2,8 @@
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="com.techmx.ext.MobileUtil"/>
+    <classEntry path="com.techmx.ext.AdmobUtil"/>
+    <classEntry path="com.techmx.ext.event.AdmobEvent"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

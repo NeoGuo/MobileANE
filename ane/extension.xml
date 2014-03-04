@@ -23,17 +23,13 @@
             <applicationDeployment/>
         </platform>
         <platform name="Windows-x86"> 
-            <applicationDeployment>
-				<nativeLibrary>libSerialANE.dll</nativeLibrary>
-				<initializer>SerialANEinitializer</initializer>
-				<finalizer>SerialANEfinalizer</finalizer>
-			</applicationDeployment>
+            <applicationDeployment/>
         </platform>
         <platform name="MacOS-x86"> 
             <applicationDeployment>
-				<nativeLibrary>SerialANE.framework</nativeLibrary>
-				<initializer>SerialANEinitializer</initializer>
-				<finalizer>SerialANEfinalizer</finalizer>
+				<nativeLibrary>EmptyLib.framework</nativeLibrary>
+				<initializer>com.techmx.EmptyLib</initializer>
+				<finalizer>com.techmx.EmptyLib</finalizer>
 			</applicationDeployment>
         </platform>
 	</platforms>
